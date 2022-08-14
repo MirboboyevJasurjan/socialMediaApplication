@@ -37,9 +37,16 @@ export default {
             type: 'string',
         },
         {
-            name: 'postedBy',
-            title: "PostedBy",
-            type: 'string',
+            name: 'save',
+            title: "Save",
+            type: 'array',
+            of: [{type: 'save'}]
+        },
+        {
+            name: 'comments',
+            title: "Comments",
+            type: 'array',
+            of: [{type: 'comment'}]
         },
 
     ]
